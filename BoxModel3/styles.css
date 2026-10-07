@@ -1,0 +1,98 @@
+/* ========== page setup ========== */
+* {
+margin: 0;
+padding: 0;
+box-sizing: content-box; /* size = content only; padding and border add on */
+}
+
+body {
+background-color: #cfcfcf;  /* neutral backdrop behind the artwork */
+display: flex;
+justify-content: center;    /* center the painting horizontally */
+padding: 40px 0;
+}
+
+/* ========== 2. OFF-WHITE CANVAS (outermost box) ========== */
+/* Padding makes the pale margin around the first stripe. */
+.canvas {
+background-color: #ece9e3;
+padding: 12px 16px 15px 16px;
+}
+
+/* ========== 3. SHARED STRIPE STYLE ========== */
+/* Every stripe is a div with a 12px border. Because each div is nested
+inside the last, the borders stack inward into concentric squares. */
+.band {
+border: 12px solid;
+}
+
+/* ========== 4. STRIPE COLORS (outside to inside) ========== */
+/* Dark brown outer frame */
+.brown { border-color: #2c1513; }
+/* Light gray */
+.gray-1 { border-color: #a8aaac; }
+/* Maroon */
+.maroon { border-color: #94171d; }
+/* Gray */
+.gray-2 { border-color: #a8aaac; }
+/* Red */
+.red { border-color: #d50e18; }
+/* Gray */
+.gray-3 { border-color: #a8aaac; }
+/* Red-orange */
+.red-orange { border-color: #e13f1f; }
+/* Gray */
+.gray-4 { border-color: #a8aaac; }
+/* Orange */
+.orange { border-color: #e26b16; }
+/* Gray */
+.gray-5 { border-color: #a8aaac; }
+/* Yellow */
+.yellow { border-color: #ecaa10; }
+/* Gray */
+.gray-6 { border-color: #a8aaac; }
+/* Olive green */
+.olive { border-color: #9aa018; }
+/* Gray */
+.gray-7 { border-color: #a8aaac; }
+/* Green */
+.green { border-color: #1b7632; }
+/* Gray */
+.gray-8 { border-color: #a8aaac; }
+/* Dark navy */
+.navy { border-color: #101c42; }
+/* Gray */
+.gray-9 { border-color: #a8aaac; }
+/* Blue */
+.blue { border-color: #1d43a3; }
+/* Gray */
+.gray-10 { border-color: #a8aaac; }
+/* Dark purple-blue */
+.purple { border-color: #281e4e; }
+
+/* ========== 5. THIN LIGHT LINE AROUND THE CENTER ========== */
+.line {
+border: 2px solid #b5b5b5;
+}
+
+/* ========== 6. CENTER BLACK SQUARE ========== */
+/* position: relative lets the tiny square be placed inside it. */
+.center {
+position: relative;
+background-color: #0c0c0c;
+width: 44px;
+height: 44px;
+}
+
+/* ========== 7. TINY SQUARE IN THE MIDDLE ========== */
+/* Absolute positioning with top/left centers it in the black square:
+(44 - 16 - 2*2 border) / 2 = 12px */
+.tiny {
+position: absolute;
+top: 12px;
+left: 12px;
+width: 16px;
+height: 16px;
+border: 2px solid #b5b5b5;
+background-color: #2a2a2a;
+}
