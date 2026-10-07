@@ -1,0 +1,49 @@
+/* ========== page setup ========== */
+* {
+margin: 0;
+padding: 0;
+box-sizing: content-box; /* width/height = content only; padding adds on */
+}
+
+body {
+background-color: #e9e9e9;   /* neutral backdrop behind the artwork */
+display: flex;
+justify-content: center;     /* center the painting horizontally */
+padding: 40px 0;             /* space above and below the artwork */
+}
+
+/* ========== 2. OUTER GRAY SQUARE (the canvas) ========== */
+/* Padding: top 88, right 60, bottom 23, left 62.
+The larger top and smaller bottom make the squares sit low,
+like the original painting. */
+.gray {
+background-color: #ccd0d4;
+padding: 88px 60px 23px 62px;
+}
+
+/* ========== 3. DARK BLUE SQUARE ========== */
+/* Content size = 360 x 360; padding reveals the white frame
+and pushes the white square toward the bottom. */
+.dark-blue {
+background-color: #063980;
+width: 360px;
+height: 360px;
+padding: 90px 58px 30px 60px;
+}
+
+/* ========== 4. WHITE SQUARE ========== */
+.white {
+background-color: #f8f8f8;
+width: 240px;
+height: 242px;
+padding: 89px 60px 29px 60px;
+}
+
+/* ========== 5. LIGHT BLUE SQUARE (center) ========== */
+/* The innermost box has no padding; its size
+   is the difference of the parent's content area. */
+.light-blue {
+background-color: #529add;
+width: 240px;
+height: 242px;
+}
