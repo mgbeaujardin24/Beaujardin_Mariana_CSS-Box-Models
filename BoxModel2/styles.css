@@ -1,0 +1,55 @@
+/* ========== page setup ========== */
+* {
+margin: 0;
+padding: 0;
+box-sizing: content-box; /* width/height = content only; padding adds on */
+}
+
+body {
+background-color: #cfcfcf;  /* neutral backdrop behind the artwork */
+display: flex;
+justify-content: center;    /* center the painting horizontally */
+padding: 40px 0;            /* space above and below the artwork */
+}
+
+/* ========== 2. OFF-WHITE CANVAS (outermost box) ========== */
+/* Padding makes the empty paper margin around the yellow square.
+Right margin is a little wider than the left, as in the original. */
+.off-white {
+background-color: #f1efe7;
+padding: 48px 55px 48px 47px;
+}
+
+/* ========== 3. YELLOW SQUARE ========== */
+/* Content is 398 x 398. The big top padding and small bottom padding
+push everything inside toward the bottom of the square. */
+.yellow {
+background-color: #fbbe07;
+width: 398px;
+height: 398px;
+padding: 74px 50px 26px 50px;
+}
+
+/* ========== 4. LIGHT ORANGE SQUARE ========== */
+.light-orange {
+background-color: #edbd6a;
+width: 298px;
+height: 298px;
+padding: 74px 50px 26px 50px;
+}
+
+/* ========== 5. SALMON SQUARE ========== */
+.salmon {
+background-color: #da8f4c;
+width: 200px;
+height: 200px;
+padding: 72px 49px 26px 49px;
+}
+
+/* ========== 6. ORANGE SQUARE (center) ========== */
+/* Innermost box: no padding, just a fixed size. */
+.orange {
+background-color: #ea6e10;
+width: 200px;
+height: 200px;
+}
